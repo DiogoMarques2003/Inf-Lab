@@ -1,0 +1,673 @@
+\hypertarget{functions_8c}{}\doxysection{Referência ao ficheiro /root/d-\/35/src/functions.c}
+\label{functions_8c}\index{/root/d-\/35/src/functions.c@{/root/d-\/35/src/functions.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}functions.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{functions_8c_abbad8140206b623eef6f75b6a7e138ac}{verificar\+Parametros}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função para verificar os parâmetros passados pelo utilizador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_ae4010edaf2e9442c2d053f2bbf911724}{ler\+Inteiro}} (int $\ast$n)
+\begin{DoxyCompactList}\small\item\em Função para ler um número inteiro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$ \mbox{\hyperlink{functions_8c_a44763180cf4ceeda19ab9c42e155f481}{criar\+Listas\+Clientes}} ()
+\begin{DoxyCompactList}\small\item\em Função para criar a lista de clientes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structelementoDietaRelizada}{Lista\+Dieta\+Realizada}} $\ast$ \mbox{\hyperlink{functions_8c_aa94012efec2c71f5c6f9f0874d9a2fcb}{criar\+Listas\+Dietas\+Realizadas}} ()
+\begin{DoxyCompactList}\small\item\em Função para criar a lista de dietas realizadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}} $\ast$ \mbox{\hyperlink{functions_8c_a73682812885a04b0ede0448623139f68}{criar\+Listas\+Planos\+Nutricionais}} ()
+\begin{DoxyCompactList}\small\item\em Função para criar a lista de planos nutricionais. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structelementoRefeicoesPlaneadas}{Lista\+Refeicoes\+Planeadas}} $\ast$ \mbox{\hyperlink{functions_8c_a5d0995c345da817b124bdc46d067ef63}{criar\+Listas\+Refeicoes\+Planeadas}} ()
+\begin{DoxyCompactList}\small\item\em Função para criar a lista de refeições planeadas. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_ad261157c3b4a0b0d541702ee94564fcd}{criar\+Listas}} ()
+\begin{DoxyCompactList}\small\item\em Função para criar as listas na inicialização do programa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_a2098bbb53e2dfce9bdba3889a0961245}{liberar\+Lista\+Clientes}} (\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$li)
+\begin{DoxyCompactList}\small\item\em Função para liberar a lista de clientes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_acd62bb94d97d49658e4c46f9488d6663}{liberar\+Lista\+Dietas\+Realizadas}} (\mbox{\hyperlink{structelementoDietaRelizada}{Lista\+Dieta\+Realizada}} $\ast$li)
+\begin{DoxyCompactList}\small\item\em Função para liberar a lista de dietas realizadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_a302bdd3a2d13a007addd9545ae8dcf50}{liberar\+Lista\+Planos\+Nutricionais}} (\mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}} $\ast$li)
+\begin{DoxyCompactList}\small\item\em Função para liberar a lista de planos nutricionais. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_a27117a774de16c1547e4d42c1116cdcb}{liberar\+Lista\+Refeicoes\+Planeadas}} (\mbox{\hyperlink{structelementoRefeicoesPlaneadas}{Lista\+Refeicoes\+Planeadas}} $\ast$li)
+\begin{DoxyCompactList}\small\item\em Função para liberar a lista de refeições planeadas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_a74839ec514bff834b922a86d2c4d6626}\label{functions_8c_a74839ec514bff834b922a86d2c4d6626}} 
+void \mbox{\hyperlink{functions_8c_a74839ec514bff834b922a86d2c4d6626}{end\+Program}} ()
+\begin{DoxyCompactList}\small\item\em Função para terminar o programa e apagar as listas. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_afadad0664b1a021dcaf12f13791746ee}{check\+Cliente\+ID}} (\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$li, int id)
+\begin{DoxyCompactList}\small\item\em Função para verificar se o ID do cliente existe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_a996f143b4de4d0d4e8ee840ba3679f6a}{check\+Plano\+Nutricional\+By\+Cliente\+Data\+Ref}} (\mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}} $\ast$li, int id\+Cliente, \mbox{\hyperlink{structData}{Data}} data, int refeicao)
+\begin{DoxyCompactList}\small\item\em Função para verificar se já existe um plano nutricional para o cliente dentro do intervalo de tempo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_ae15eca646e51050ddc0528ef9754f09a}{insert\+Cliente}} (\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$li, \mbox{\hyperlink{structCliente}{Cliente}} cliente)
+\begin{DoxyCompactList}\small\item\em Função para inserir um novo cliente na lista. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_a5a9dd5c510c1ed1ca25fdc672f6e2f30}{insert\+Dieta\+Realizada}} (\mbox{\hyperlink{structelementoDietaRelizada}{Lista\+Dieta\+Realizada}} $\ast$li, \mbox{\hyperlink{structDietaRealizada}{Dieta\+Realizada}} dieta\+Realizada)
+\begin{DoxyCompactList}\small\item\em Função para inserir uma dieta realizada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_a1faa06f67aad6b38435b02eb32e5914f}{insert\+Plano\+Nutricional}} (\mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}} $\ast$li, \mbox{\hyperlink{structPlanoNutricional}{Plano\+Nutricional}} plano\+Nutricional)
+\begin{DoxyCompactList}\small\item\em Função para inserir um plano nutricional. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_a28d3034696d1d13185be5f68bfa694a4}{insert\+Refeicao\+Planeada}} (\mbox{\hyperlink{structelementoRefeicoesPlaneadas}{Lista\+Refeicoes\+Planeadas}} $\ast$li, \mbox{\hyperlink{structRefeicoesPlaneadas}{Refeicoes\+Planeadas}} refeicoes\+Planeadas)
+\begin{DoxyCompactList}\small\item\em Função para inserir uma refeição planeada. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions_8c_a213b2d83a178f8fddb0d293b04353da4}{convert\+Refeicao}} (char $\ast$refeicao)
+\begin{DoxyCompactList}\small\item\em Função para converter a string de uma refeição para número. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{functions_8c_ac950090cf282448841e86587d6616c39}{convert\+Refeicao\+String}} (int refeicao)
+\begin{DoxyCompactList}\small\item\em Função para converter o número da refeição para a sua string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_ad1027625f7156311abdae654c0293e7a}{file\+Exists}} (char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Função para verificar se o arquivo existe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_a1d675b1f42963d295206c11abc045b40}{carregar\+Clientes}} ()
+\begin{DoxyCompactList}\small\item\em Função para carregar os clientes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_ac9f24a97286f44d557911d4132e8eef3}{carregar\+Dietas\+Realizadas}} ()
+\begin{DoxyCompactList}\small\item\em Função para carregar as dietas realizadas. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_a6b4163d80c80b0f90e6d1bda036fbacf}{carregar\+Planos\+Nutricionais}} ()
+\begin{DoxyCompactList}\small\item\em Função para carregar os planos nutricionais. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_ada149ce97625dbe5ba1230dd3141d3bd}\label{functions_8c_ada149ce97625dbe5ba1230dd3141d3bd}} 
+void \mbox{\hyperlink{functions_8c_ada149ce97625dbe5ba1230dd3141d3bd}{display\+Clientes}} ()
+\begin{DoxyCompactList}\small\item\em Função para fazer display dos clientes inseridos na lista. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_a5a65b1136b4958b2721bca80a196c868}\label{functions_8c_a5a65b1136b4958b2721bca80a196c868}} 
+void \mbox{\hyperlink{functions_8c_a5a65b1136b4958b2721bca80a196c868}{display\+Dietas\+Realizadas}} ()
+\begin{DoxyCompactList}\small\item\em Função para fazer display das dietas realizadas inseridas na lista. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_a808c9f0589f5b19428d61b5f3654b0f1}\label{functions_8c_a808c9f0589f5b19428d61b5f3654b0f1}} 
+void \mbox{\hyperlink{functions_8c_a808c9f0589f5b19428d61b5f3654b0f1}{display\+Planos\+Nutricionais}} ()
+\begin{DoxyCompactList}\small\item\em Função para fazer display dos planos nutricionais inseridos na lista. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_ac579ef99982bcbeb5dcc8d0555e3000b}{is\+Ano\+Bissexto}} (int ano)
+\begin{DoxyCompactList}\small\item\em Função para verificar se um ano é bissexto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions_8c_a3c4be421e74b8bfe63bf3ea1439a1cc7}{dia\+Mes}} (int mes, int ano)
+\begin{DoxyCompactList}\small\item\em Função para obter os dias do mês. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8c_ac5e2db65bec6d3eb4eb242237409c3b1}{ordenar\+Clientes\+Decrescente}} (\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$li)
+\begin{DoxyCompactList}\small\item\em Função para ordenar os clientes de forma decrescente. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_a393795903e6b20e0f18ffc0f795f03f1}{is\+Valid\+Data\+Range}} (\mbox{\hyperlink{structData}{Data}} data\+Inicio, \mbox{\hyperlink{structData}{Data}} data\+Fim)
+\begin{DoxyCompactList}\small\item\em Função para verificar se as datas fornecidas formam um range válido. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_a4cc6ecd94d634512849b426cd9f23da0}{is\+In\+Data\+Range}} (\mbox{\hyperlink{structData}{Data}} data, \mbox{\hyperlink{structData}{Data}} data\+Inicio, \mbox{\hyperlink{structData}{Data}} data\+Fim)
+\begin{DoxyCompactList}\small\item\em Função para verificar se a data está dentro do intervalo de datas. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{functions_8c_ad51ba7be5b1343e5f640f4cca8891526}{i\+SDate\+Range\+Inside\+Other}} (\mbox{\hyperlink{structData}{Data}} data\+Inicio, \mbox{\hyperlink{structData}{Data}} data\+Fim, \mbox{\hyperlink{structData}{Data}} data\+Inicio2, \mbox{\hyperlink{structData}{Data}} data\+Fim2)
+\begin{DoxyCompactList}\small\item\em Função para verificar se um range de datas está dentro do outro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structData}{Data}} \mbox{\hyperlink{functions_8c_a1488c55e91261cfa1d0a73e0d6d90f43}{perguntar\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Função para perguntar a data ao utilizador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_ad0b5c1b7a2d63588150fed571bab4599}\label{functions_8c_ad0b5c1b7a2d63588150fed571bab4599}} 
+void \mbox{\hyperlink{functions_8c_ad0b5c1b7a2d63588150fed571bab4599}{clientes\+Passaram\+Calorias\+Periodo\+Tempo}} ()
+\begin{DoxyCompactList}\small\item\em Função para o ponto 2 do trabalho. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_a004d18deab42e7287b63bfbfbcd30f5c}\label{functions_8c_a004d18deab42e7287b63bfbfbcd30f5c}} 
+void \mbox{\hyperlink{functions_8c_a004d18deab42e7287b63bfbfbcd30f5c}{clientes\+Passaram\+Plano\+Nutricional\+Periodo\+Tempo\+Decrescente}} ()
+\begin{DoxyCompactList}\small\item\em Função para o ponto 3 do trabalho. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_ad9e780f3472db0aa37e6ab68f9812db1}\label{functions_8c_ad9e780f3472db0aa37e6ab68f9812db1}} 
+void \mbox{\hyperlink{functions_8c_ad9e780f3472db0aa37e6ab68f9812db1}{listar\+Plano\+Nutricional\+Paciente\+Refeicao\+Periodo\+Tempo}} ()
+\begin{DoxyCompactList}\small\item\em Função para o ponto 4 do trabalho. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_a2360c3978e69221c3344ac3eca9ff612}\label{functions_8c_a2360c3978e69221c3344ac3eca9ff612}} 
+void \mbox{\hyperlink{functions_8c_a2360c3978e69221c3344ac3eca9ff612}{calcular\+Media\+Cal\+Refeicao\+Passado\+Periodo\+Tempo}} ()
+\begin{DoxyCompactList}\small\item\em Função para o ponto 5 do trabalho. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8c_ab5c62235af9c3dfa645f46c1b06eb01d}\label{functions_8c_ab5c62235af9c3dfa645f46c1b06eb01d}} 
+void \mbox{\hyperlink{functions_8c_ab5c62235af9c3dfa645f46c1b06eb01d}{gerar\+Tabela\+Refeicoes\+Planeadas}} ()
+\begin{DoxyCompactList}\small\item\em Função para o ponto 6 do trabalho. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{functions_8c_a907abd7ed156be116cc31cb024150db8}\label{functions_8c_a907abd7ed156be116cc31cb024150db8}} 
+bool {\bfseries arquivo\+Tab} = false
+\item 
+\mbox{\Hypertarget{functions_8c_a6bd351e5423acdd0906f10c3522bbbaa}\label{functions_8c_a6bd351e5423acdd0906f10c3522bbbaa}} 
+bool {\bfseries arquivo\+Bin} = false
+\item 
+\mbox{\Hypertarget{functions_8c_ac3bf795edce78af6e2210ace29138bf7}\label{functions_8c_ac3bf795edce78af6e2210ace29138bf7}} 
+\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$ {\bfseries lista\+Cliente}
+\item 
+\mbox{\Hypertarget{functions_8c_a05a34fa2e67d0cf8d3a8395d6200e686}\label{functions_8c_a05a34fa2e67d0cf8d3a8395d6200e686}} 
+\mbox{\hyperlink{structelementoDietaRelizada}{Lista\+Dieta\+Realizada}} $\ast$ {\bfseries lista\+Dieta\+Realizada}
+\item 
+\mbox{\Hypertarget{functions_8c_a543eac1156fb5e077d7a72af10c2b4fa}\label{functions_8c_a543eac1156fb5e077d7a72af10c2b4fa}} 
+\mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}} $\ast$ {\bfseries lista\+Plano\+Nutricional}
+\item 
+\mbox{\Hypertarget{functions_8c_abc9752a385cc95ed4c4a4cdafc41f832}\label{functions_8c_abc9752a385cc95ed4c4a4cdafc41f832}} 
+\mbox{\hyperlink{structelementoRefeicoesPlaneadas}{Lista\+Refeicoes\+Planeadas}} $\ast$ {\bfseries lista\+Refeicoes\+Planeadas}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+\begin{DoxyVersion}{Versão}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2023-\/12-\/21
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{functions_8c_a1d675b1f42963d295206c11abc045b40}\label{functions_8c_a1d675b1f42963d295206c11abc045b40}} 
+\index{functions.c@{functions.c}!carregarClientes@{carregarClientes}}
+\index{carregarClientes@{carregarClientes}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{carregarClientes()}{carregarClientes()}}
+{\footnotesize\ttfamily bool carregar\+Clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para carregar os clientes. 
+
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se os clientes foram carregados com sucesso 
+
+false $\ast$ Se os clientes não foram carregados com sucesso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_ac9f24a97286f44d557911d4132e8eef3}\label{functions_8c_ac9f24a97286f44d557911d4132e8eef3}} 
+\index{functions.c@{functions.c}!carregarDietasRealizadas@{carregarDietasRealizadas}}
+\index{carregarDietasRealizadas@{carregarDietasRealizadas}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{carregarDietasRealizadas()}{carregarDietasRealizadas()}}
+{\footnotesize\ttfamily bool carregar\+Dietas\+Realizadas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para carregar as dietas realizadas. 
+
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se as dietas realizadas foram carregadas com sucesso 
+
+false $\ast$ Se as dietas realizadas não foram carregadas com sucesso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a6b4163d80c80b0f90e6d1bda036fbacf}\label{functions_8c_a6b4163d80c80b0f90e6d1bda036fbacf}} 
+\index{functions.c@{functions.c}!carregarPlanosNutricionais@{carregarPlanosNutricionais}}
+\index{carregarPlanosNutricionais@{carregarPlanosNutricionais}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{carregarPlanosNutricionais()}{carregarPlanosNutricionais()}}
+{\footnotesize\ttfamily bool carregar\+Planos\+Nutricionais (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para carregar os planos nutricionais. 
+
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se os planos nutricionais foram carregados com sucesso 
+
+false $\ast$ Se os planos nutricionais não foram carregados com sucesso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_afadad0664b1a021dcaf12f13791746ee}\label{functions_8c_afadad0664b1a021dcaf12f13791746ee}} 
+\index{functions.c@{functions.c}!checkClienteID@{checkClienteID}}
+\index{checkClienteID@{checkClienteID}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{checkClienteID()}{checkClienteID()}}
+{\footnotesize\ttfamily bool check\+Cliente\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$}]{li,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Função para verificar se o ID do cliente existe. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de clientes \\
+\hline
+{\em id} & $\ast$ ID do cliente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se o ID do cliente existe 
+
+false $\ast$ Se o ID do cliente não existe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a996f143b4de4d0d4e8ee840ba3679f6a}\label{functions_8c_a996f143b4de4d0d4e8ee840ba3679f6a}} 
+\index{functions.c@{functions.c}!checkPlanoNutricionalByClienteDataRef@{checkPlanoNutricionalByClienteDataRef}}
+\index{checkPlanoNutricionalByClienteDataRef@{checkPlanoNutricionalByClienteDataRef}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{checkPlanoNutricionalByClienteDataRef()}{checkPlanoNutricionalByClienteDataRef()}}
+{\footnotesize\ttfamily bool check\+Plano\+Nutricional\+By\+Cliente\+Data\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}} $\ast$}]{li,  }\item[{int}]{id\+Cliente,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data,  }\item[{int}]{refeicao }\end{DoxyParamCaption})}
+
+
+
+Função para verificar se já existe um plano nutricional para o cliente dentro do intervalo de tempo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de planos nutricionais \\
+\hline
+{\em id\+Cliente} & $\ast$ ID do cliente \\
+\hline
+{\em data} & $\ast$ \mbox{\hyperlink{structData}{Data}} \\
+\hline
+{\em refeicao} & $\ast$ Refeição \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se já existe um plano nutricional para o cliente dentro do intervalo de tempo 
+
+false $\ast$ Se não existe um plano nutricional para o cliente dentro do intervalo de tempo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a213b2d83a178f8fddb0d293b04353da4}\label{functions_8c_a213b2d83a178f8fddb0d293b04353da4}} 
+\index{functions.c@{functions.c}!convertRefeicao@{convertRefeicao}}
+\index{convertRefeicao@{convertRefeicao}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{convertRefeicao()}{convertRefeicao()}}
+{\footnotesize\ttfamily int convert\+Refeicao (\begin{DoxyParamCaption}\item[{char $\ast$}]{refeicao }\end{DoxyParamCaption})}
+
+
+
+Função para converter a string de uma refeição para número. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em refeicao} & $\ast$ String da refeição \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+int $\ast$ Número da refeição 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_ac950090cf282448841e86587d6616c39}\label{functions_8c_ac950090cf282448841e86587d6616c39}} 
+\index{functions.c@{functions.c}!convertRefeicaoString@{convertRefeicaoString}}
+\index{convertRefeicaoString@{convertRefeicaoString}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{convertRefeicaoString()}{convertRefeicaoString()}}
+{\footnotesize\ttfamily char$\ast$ convert\+Refeicao\+String (\begin{DoxyParamCaption}\item[{int}]{refeicao }\end{DoxyParamCaption})}
+
+
+
+Função para converter o número da refeição para a sua string. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em refeicao} & $\ast$ Número da refeição \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+char$\ast$ $\ast$ String da refeição 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_ad261157c3b4a0b0d541702ee94564fcd}\label{functions_8c_ad261157c3b4a0b0d541702ee94564fcd}} 
+\index{functions.c@{functions.c}!criarListas@{criarListas}}
+\index{criarListas@{criarListas}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{criarListas()}{criarListas()}}
+{\footnotesize\ttfamily bool criar\+Listas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para criar as listas na inicialização do programa. 
+
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se as listas foram criadas 
+
+false $\ast$ Se as listas não foram criadas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a44763180cf4ceeda19ab9c42e155f481}\label{functions_8c_a44763180cf4ceeda19ab9c42e155f481}} 
+\index{functions.c@{functions.c}!criarListasClientes@{criarListasClientes}}
+\index{criarListasClientes@{criarListasClientes}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{criarListasClientes()}{criarListasClientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}}$\ast$ criar\+Listas\+Clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para criar a lista de clientes. 
+
+\begin{DoxyReturn}{Retorna}
+Lista\+Cliente$\ast$ $\ast$ Lista de clientes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_aa94012efec2c71f5c6f9f0874d9a2fcb}\label{functions_8c_aa94012efec2c71f5c6f9f0874d9a2fcb}} 
+\index{functions.c@{functions.c}!criarListasDietasRealizadas@{criarListasDietasRealizadas}}
+\index{criarListasDietasRealizadas@{criarListasDietasRealizadas}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{criarListasDietasRealizadas()}{criarListasDietasRealizadas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structelementoDietaRelizada}{Lista\+Dieta\+Realizada}}$\ast$ criar\+Listas\+Dietas\+Realizadas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para criar a lista de dietas realizadas. 
+
+\begin{DoxyReturn}{Retorna}
+Lista\+Dieta\+Realizada$\ast$ $\ast$ Lista de dietas realizadas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a73682812885a04b0ede0448623139f68}\label{functions_8c_a73682812885a04b0ede0448623139f68}} 
+\index{functions.c@{functions.c}!criarListasPlanosNutricionais@{criarListasPlanosNutricionais}}
+\index{criarListasPlanosNutricionais@{criarListasPlanosNutricionais}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{criarListasPlanosNutricionais()}{criarListasPlanosNutricionais()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}}$\ast$ criar\+Listas\+Planos\+Nutricionais (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para criar a lista de planos nutricionais. 
+
+\begin{DoxyReturn}{Retorna}
+Lista\+Plano\+Nutricional$\ast$ $\ast$ Lista de planos nutricionais 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a5d0995c345da817b124bdc46d067ef63}\label{functions_8c_a5d0995c345da817b124bdc46d067ef63}} 
+\index{functions.c@{functions.c}!criarListasRefeicoesPlaneadas@{criarListasRefeicoesPlaneadas}}
+\index{criarListasRefeicoesPlaneadas@{criarListasRefeicoesPlaneadas}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{criarListasRefeicoesPlaneadas()}{criarListasRefeicoesPlaneadas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structelementoRefeicoesPlaneadas}{Lista\+Refeicoes\+Planeadas}}$\ast$ criar\+Listas\+Refeicoes\+Planeadas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para criar a lista de refeições planeadas. 
+
+\begin{DoxyReturn}{Retorna}
+Lista\+Refeicoes\+Planeadas$\ast$ $\ast$ Lista de refeições planeadas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a3c4be421e74b8bfe63bf3ea1439a1cc7}\label{functions_8c_a3c4be421e74b8bfe63bf3ea1439a1cc7}} 
+\index{functions.c@{functions.c}!diaMes@{diaMes}}
+\index{diaMes@{diaMes}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{diaMes()}{diaMes()}}
+{\footnotesize\ttfamily int dia\+Mes (\begin{DoxyParamCaption}\item[{int}]{mes,  }\item[{int}]{ano }\end{DoxyParamCaption})}
+
+
+
+Função para obter os dias do mês. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em mes} & $\ast$ Mês \\
+\hline
+{\em ano} & $\ast$ Ano \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+int $\ast$ Número de dias do mês 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_ad1027625f7156311abdae654c0293e7a}\label{functions_8c_ad1027625f7156311abdae654c0293e7a}} 
+\index{functions.c@{functions.c}!fileExists@{fileExists}}
+\index{fileExists@{fileExists}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{fileExists()}{fileExists()}}
+{\footnotesize\ttfamily bool file\+Exists (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Função para verificar se o arquivo existe. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em file\+Name} & $\ast$ Nome/\+Caminho do arquivo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se o arquivo existir 
+
+false $\ast$ Se o arquivo não existir 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_ae15eca646e51050ddc0528ef9754f09a}\label{functions_8c_ae15eca646e51050ddc0528ef9754f09a}} 
+\index{functions.c@{functions.c}!insertCliente@{insertCliente}}
+\index{insertCliente@{insertCliente}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{insertCliente()}{insertCliente()}}
+{\footnotesize\ttfamily bool insert\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$}]{li,  }\item[{\mbox{\hyperlink{structCliente}{Cliente}}}]{cliente }\end{DoxyParamCaption})}
+
+
+
+Função para inserir um novo cliente na lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de clientes \\
+\hline
+{\em cliente} & $\ast$ Dados do cliente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se o cliente foi inserido com sucesso 
+
+false $\ast$ Se o cliente não foi inserido com sucesso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a5a9dd5c510c1ed1ca25fdc672f6e2f30}\label{functions_8c_a5a9dd5c510c1ed1ca25fdc672f6e2f30}} 
+\index{functions.c@{functions.c}!insertDietaRealizada@{insertDietaRealizada}}
+\index{insertDietaRealizada@{insertDietaRealizada}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{insertDietaRealizada()}{insertDietaRealizada()}}
+{\footnotesize\ttfamily bool insert\+Dieta\+Realizada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoDietaRelizada}{Lista\+Dieta\+Realizada}} $\ast$}]{li,  }\item[{\mbox{\hyperlink{structDietaRealizada}{Dieta\+Realizada}}}]{dieta\+Realizada }\end{DoxyParamCaption})}
+
+
+
+Função para inserir uma dieta realizada. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de dietas realizadas \\
+\hline
+{\em dieta\+Realizada} & $\ast$ Dados da dieta realizada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se a dieta realizada foi inserida com sucesso 
+
+false $\ast$ Se a dieta realizada não foi inserida com sucesso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a1faa06f67aad6b38435b02eb32e5914f}\label{functions_8c_a1faa06f67aad6b38435b02eb32e5914f}} 
+\index{functions.c@{functions.c}!insertPlanoNutricional@{insertPlanoNutricional}}
+\index{insertPlanoNutricional@{insertPlanoNutricional}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{insertPlanoNutricional()}{insertPlanoNutricional()}}
+{\footnotesize\ttfamily bool insert\+Plano\+Nutricional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}} $\ast$}]{li,  }\item[{\mbox{\hyperlink{structPlanoNutricional}{Plano\+Nutricional}}}]{plano\+Nutricional }\end{DoxyParamCaption})}
+
+
+
+Função para inserir um plano nutricional. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de planos nutricionais \\
+\hline
+{\em plano\+Nutricional} & $\ast$ Dados do plano nutricional \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se o plano nutricional foi inserido com sucesso 
+
+false $\ast$ Se o plano nutricional não foi inserido com sucesso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a28d3034696d1d13185be5f68bfa694a4}\label{functions_8c_a28d3034696d1d13185be5f68bfa694a4}} 
+\index{functions.c@{functions.c}!insertRefeicaoPlaneada@{insertRefeicaoPlaneada}}
+\index{insertRefeicaoPlaneada@{insertRefeicaoPlaneada}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{insertRefeicaoPlaneada()}{insertRefeicaoPlaneada()}}
+{\footnotesize\ttfamily bool insert\+Refeicao\+Planeada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoRefeicoesPlaneadas}{Lista\+Refeicoes\+Planeadas}} $\ast$}]{li,  }\item[{\mbox{\hyperlink{structRefeicoesPlaneadas}{Refeicoes\+Planeadas}}}]{refeicoes\+Planeadas }\end{DoxyParamCaption})}
+
+
+
+Função para inserir uma refeição planeada. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de refeições planeadas \\
+\hline
+{\em refeicoes\+Planeadas} & $\ast$ Dados da refeição planeada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se a refeição planeada foi inserida com sucesso 
+
+false $\ast$ Se a refeição planeada não foi inserida com sucesso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_ac579ef99982bcbeb5dcc8d0555e3000b}\label{functions_8c_ac579ef99982bcbeb5dcc8d0555e3000b}} 
+\index{functions.c@{functions.c}!isAnoBissexto@{isAnoBissexto}}
+\index{isAnoBissexto@{isAnoBissexto}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{isAnoBissexto()}{isAnoBissexto()}}
+{\footnotesize\ttfamily bool is\+Ano\+Bissexto (\begin{DoxyParamCaption}\item[{int}]{ano }\end{DoxyParamCaption})}
+
+
+
+Função para verificar se um ano é bissexto. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em ano} & $\ast$ Ano \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se o ano for bissexto 
+
+false $\ast$ Se o ano não for bissexto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_ad51ba7be5b1343e5f640f4cca8891526}\label{functions_8c_ad51ba7be5b1343e5f640f4cca8891526}} 
+\index{functions.c@{functions.c}!iSDateRangeInsideOther@{iSDateRangeInsideOther}}
+\index{iSDateRangeInsideOther@{iSDateRangeInsideOther}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{iSDateRangeInsideOther()}{iSDateRangeInsideOther()}}
+{\footnotesize\ttfamily bool i\+SDate\+Range\+Inside\+Other (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structData}{Data}}}]{data\+Inicio,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data\+Fim,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data\+Inicio2,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data\+Fim2 }\end{DoxyParamCaption})}
+
+
+
+Função para verificar se um range de datas está dentro do outro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Inicio} & $\ast$ \mbox{\hyperlink{structData}{Data}} de início do 1º range \\
+\hline
+{\em data\+Fim} & $\ast$ \mbox{\hyperlink{structData}{Data}} de fim do 1º range \\
+\hline
+{\em data\+Inicio2} & $\ast$ \mbox{\hyperlink{structData}{Data}} de início do 2º range \\
+\hline
+{\em data\+Fim2} & $\ast$ \mbox{\hyperlink{structData}{Data}} de fim do 2º range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se o 1º range estiver dentro do 2º range 
+
+false $\ast$ Se o 1º range não estiver dentro do 2º range 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a4cc6ecd94d634512849b426cd9f23da0}\label{functions_8c_a4cc6ecd94d634512849b426cd9f23da0}} 
+\index{functions.c@{functions.c}!isInDataRange@{isInDataRange}}
+\index{isInDataRange@{isInDataRange}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{isInDataRange()}{isInDataRange()}}
+{\footnotesize\ttfamily bool is\+In\+Data\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structData}{Data}}}]{data,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data\+Inicio,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data\+Fim }\end{DoxyParamCaption})}
+
+
+
+Função para verificar se a data está dentro do intervalo de datas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data} & $\ast$ \mbox{\hyperlink{structData}{Data}} para verificar \\
+\hline
+{\em data\+Inicio} & $\ast$ \mbox{\hyperlink{structData}{Data}} de início \\
+\hline
+{\em data\+Fim} & $\ast$ \mbox{\hyperlink{structData}{Data}} de fim \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se a data estiver dentro do intervalo 
+
+false $\ast$ Se a data não estiver dentro do intervalo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_a393795903e6b20e0f18ffc0f795f03f1}\label{functions_8c_a393795903e6b20e0f18ffc0f795f03f1}} 
+\index{functions.c@{functions.c}!isValidDataRange@{isValidDataRange}}
+\index{isValidDataRange@{isValidDataRange}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{isValidDataRange()}{isValidDataRange()}}
+{\footnotesize\ttfamily bool is\+Valid\+Data\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structData}{Data}}}]{data\+Inicio,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data\+Fim }\end{DoxyParamCaption})}
+
+
+
+Função para verificar se as datas fornecidas formam um range válido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Inicio} & $\ast$ \mbox{\hyperlink{structData}{Data}} de início \\
+\hline
+{\em data\+Fim} & $\ast$ \mbox{\hyperlink{structData}{Data}} de fim \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se o range for válido 
+
+false $\ast$ Se o range não for válido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_ae4010edaf2e9442c2d053f2bbf911724}\label{functions_8c_ae4010edaf2e9442c2d053f2bbf911724}} 
+\index{functions.c@{functions.c}!lerInteiro@{lerInteiro}}
+\index{lerInteiro@{lerInteiro}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{lerInteiro()}{lerInteiro()}}
+{\footnotesize\ttfamily void ler\+Inteiro (\begin{DoxyParamCaption}\item[{int $\ast$}]{n }\end{DoxyParamCaption})}
+
+
+
+Função para ler um número inteiro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em n} & $\ast$ Número inteiro \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a2098bbb53e2dfce9bdba3889a0961245}\label{functions_8c_a2098bbb53e2dfce9bdba3889a0961245}} 
+\index{functions.c@{functions.c}!liberarListaClientes@{liberarListaClientes}}
+\index{liberarListaClientes@{liberarListaClientes}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{liberarListaClientes()}{liberarListaClientes()}}
+{\footnotesize\ttfamily void liberar\+Lista\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$}]{li }\end{DoxyParamCaption})}
+
+
+
+Função para liberar a lista de clientes. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de clientes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_acd62bb94d97d49658e4c46f9488d6663}\label{functions_8c_acd62bb94d97d49658e4c46f9488d6663}} 
+\index{functions.c@{functions.c}!liberarListaDietasRealizadas@{liberarListaDietasRealizadas}}
+\index{liberarListaDietasRealizadas@{liberarListaDietasRealizadas}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{liberarListaDietasRealizadas()}{liberarListaDietasRealizadas()}}
+{\footnotesize\ttfamily void liberar\+Lista\+Dietas\+Realizadas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoDietaRelizada}{Lista\+Dieta\+Realizada}} $\ast$}]{li }\end{DoxyParamCaption})}
+
+
+
+Função para liberar a lista de dietas realizadas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de dietas realizadas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a302bdd3a2d13a007addd9545ae8dcf50}\label{functions_8c_a302bdd3a2d13a007addd9545ae8dcf50}} 
+\index{functions.c@{functions.c}!liberarListaPlanosNutricionais@{liberarListaPlanosNutricionais}}
+\index{liberarListaPlanosNutricionais@{liberarListaPlanosNutricionais}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{liberarListaPlanosNutricionais()}{liberarListaPlanosNutricionais()}}
+{\footnotesize\ttfamily void liberar\+Lista\+Planos\+Nutricionais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoPlanoNutricional}{Lista\+Plano\+Nutricional}} $\ast$}]{li }\end{DoxyParamCaption})}
+
+
+
+Função para liberar a lista de planos nutricionais. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de planos nutricionais \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a27117a774de16c1547e4d42c1116cdcb}\label{functions_8c_a27117a774de16c1547e4d42c1116cdcb}} 
+\index{functions.c@{functions.c}!liberarListaRefeicoesPlaneadas@{liberarListaRefeicoesPlaneadas}}
+\index{liberarListaRefeicoesPlaneadas@{liberarListaRefeicoesPlaneadas}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{liberarListaRefeicoesPlaneadas()}{liberarListaRefeicoesPlaneadas()}}
+{\footnotesize\ttfamily void liberar\+Lista\+Refeicoes\+Planeadas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoRefeicoesPlaneadas}{Lista\+Refeicoes\+Planeadas}} $\ast$}]{li }\end{DoxyParamCaption})}
+
+
+
+Função para liberar a lista de refeições planeadas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de refeições planeadas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_ac5e2db65bec6d3eb4eb242237409c3b1}\label{functions_8c_ac5e2db65bec6d3eb4eb242237409c3b1}} 
+\index{functions.c@{functions.c}!ordenarClientesDecrescente@{ordenarClientesDecrescente}}
+\index{ordenarClientesDecrescente@{ordenarClientesDecrescente}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{ordenarClientesDecrescente()}{ordenarClientesDecrescente()}}
+{\footnotesize\ttfamily void ordenar\+Clientes\+Decrescente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structelementoCliente}{Lista\+Cliente}} $\ast$}]{li }\end{DoxyParamCaption})}
+
+
+
+Função para ordenar os clientes de forma decrescente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em li} & $\ast$ Lista de clientes para ordenar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8c_a1488c55e91261cfa1d0a73e0d6d90f43}\label{functions_8c_a1488c55e91261cfa1d0a73e0d6d90f43}} 
+\index{functions.c@{functions.c}!perguntarData@{perguntarData}}
+\index{perguntarData@{perguntarData}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{perguntarData()}{perguntarData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structData}{Data}} perguntar\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para perguntar a data ao utilizador. 
+
+\begin{DoxyReturn}{Retorna}
+\mbox{\hyperlink{structData}{Data}} $\ast$ \mbox{\hyperlink{structData}{Data}} inserida pelo utilizador 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8c_abbad8140206b623eef6f75b6a7e138ac}\label{functions_8c_abbad8140206b623eef6f75b6a7e138ac}} 
+\index{functions.c@{functions.c}!verificarParametros@{verificarParametros}}
+\index{verificarParametros@{verificarParametros}!functions.c@{functions.c}}
+\doxysubsubsection{\texorpdfstring{verificarParametros()}{verificarParametros()}}
+{\footnotesize\ttfamily bool verificar\+Parametros (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Função para verificar os parâmetros passados pelo utilizador. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em argc} & $\ast$ Nº de parametros passado pelo utilizador \\
+\hline
+{\em argv} & $\ast$ Array de parametros passado pelo utilizador \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true $\ast$ Se o utilizador passou o parâmetro \char`\"{}-\/ajuda\char`\"{} 
+
+false $\ast$ Se o utilizador não passou o parâmetro \char`\"{}-\/ajuda\char`\"{} 
+\end{DoxyReturn}
